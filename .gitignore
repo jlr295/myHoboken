@@ -13,3 +13,11 @@
 .externalNativeBuild
 .cxx
 local.properties
+# Android Studio
+*.ipr
+*.iws
+.idea/
+.navigation
+captures/
+# Mac OS X clutter
+*.DS_Store
