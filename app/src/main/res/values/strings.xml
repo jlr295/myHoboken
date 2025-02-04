@@ -7,4 +7,35 @@
     <string name="parks">Parks</string>
     <string name="shopping">Shopping</string>
     <string name="bars">Bars</string>
+    <string name="belo_bar">Belo Bar</string>
+    <string name="carpe_diem">Carpe Diem</string>
+    <string name="dear_maud">Dear Maud</string>
+    <string name="pier_13">Pier 13</string>
+    <string name="string_ray">String Ray</string>
+    <string name="church_square_park">Church Square Park</string>
+    <string name="maxwell_park">Maxwell Park</string>
+    <string name="pier_a">Pier A</string>
+    <string name="sinatra_park">Sinatra Park</string>
+    <string name="stevens_park">Stevens Park</string>
+    <string name="augustinos">Augustinos</string>
+    <string name="karma_kafe">Karma Kafe</string>
+    <string name="morelias">Morelias</string>
+    <string name="panela">Panela</string>
+    <string name="tosti">Tosti</string>
+    <string name="bwe">Bwe Kafe</string>
+    <string name="mojo">Mojo</string>
+    <string name="roost">Roost Outpost</string>
+    <string name="hive">The Hive</string>
+    <string name="yukis">Yukis</string>
+    <string name="athleta">Athleta</string>
+    <string name="sephora">Sephora</string>
+    <string name="madewell">Madewell</string>
+    <string name="lululemon">Lululemon</string>
+    <string name="thriftbox">Thriftbox</string>
+
+
+
+
+
+
 </resources>
