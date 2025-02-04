@@ -4,7 +4,6 @@ import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Card
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
@@ -14,6 +13,8 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import com.example.myHoboken.ui.StartCategoryScreen
+import com.example.myHoboken.data.DataSource
 
 /**
  * Displays the top bar and navigation buttons
@@ -50,7 +51,6 @@ fun MyHobokenAppBar(
 // Working app skeleton with navigation and App Bar
 @Composable
 fun MyHobokenApp(
-
 ){
     /*TODO: Continue with this*/
     val currentScreen = MyHobokenScreen.valueOf(MyHobokenScreen.Start.name)
@@ -67,11 +67,9 @@ fun MyHobokenApp(
                     .padding(innerPadding)
                     .fillMaxSize()
             ) {
-                Card(){
-                    //Testing Content
-                    Text(text = "TESTING")
-                }
-
+                StartCategoryScreen(
+                    categories = DataSource.categories
+                )
         }
     }
 

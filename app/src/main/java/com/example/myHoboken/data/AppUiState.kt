@@ -7,5 +7,5 @@ data class AppUiState(
 /**
  * TODO
  */
-    val userName: String = " "
+    val categories: List<String> = listOf()
 )
