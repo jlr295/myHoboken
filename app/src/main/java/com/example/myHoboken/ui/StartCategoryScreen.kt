@@ -8,17 +8,26 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.widthIn
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonColors
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Shapes
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import com.example.myHoboken.R
 
@@ -34,7 +43,6 @@ fun StartCategoryScreen(
     Column(
         modifier = modifier,
         verticalArrangement = Arrangement.SpaceBetween,
-        horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Spacer(
             modifier = Modifier
@@ -55,6 +63,7 @@ fun StartCategoryScreen(
                 modifier = Modifier
                     .width(350.dp)
                     .padding(20.dp)
+                    .clip(RoundedCornerShape(10))
             )
             Spacer(
                 modifier = Modifier
@@ -64,26 +73,28 @@ fun StartCategoryScreen(
 
             Text(
                 text = stringResource(R.string.select_category),
-                Modifier
+                style = TextStyle(
+                    fontWeight = FontWeight.Bold
+                ),
+                modifier = Modifier
                     .align(Alignment.Start)
-                    .padding(10.dp)
+                    .padding(horizontal = 20.dp)
             )
 
-            Spacer(
-                modifier = Modifier
-                    .height(10.dp)
-                    .fillMaxWidth()
-            )
         }
         Column(
             verticalArrangement = Arrangement.Bottom,
-            horizontalAlignment = Alignment.CenterHorizontally,
+            horizontalAlignment = Alignment.Start,
+            modifier = Modifier
+                .padding(20.dp)
+                .fillMaxWidth()
         ) {
         categories.forEach { item ->
             SelectCategoryButton(
                 labelCategoryId = item,
                 modifier = Modifier
                     .widthIn(300.dp)
+
             )
         }
         }
@@ -98,6 +109,13 @@ fun SelectCategoryButton(
 ){
     Button(
         onClick = onClick,
+        shape = RoundedCornerShape(bottomStart = 20.dp, topEnd = 20.dp),
+        colors = ButtonColors(
+            containerColor = MaterialTheme.colorScheme.primary,
+            contentColor = MaterialTheme.colorScheme.onPrimary,
+            disabledContentColor = MaterialTheme.colorScheme.onPrimary,
+            disabledContainerColor = MaterialTheme.colorScheme.primary
+        ),
         modifier = modifier
     ) {
         Text(stringResource(labelCategoryId))

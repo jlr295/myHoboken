@@ -268,13 +268,14 @@ fun MyHobokenTheme(
             if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
         }
 
-        darkTheme -> mediumContrastDarkColorScheme
-        else ->  mediumContrastLightColorScheme
+        darkTheme -> darkScheme
+        else ->  lightScheme
     }
+
 
     MaterialTheme(
         colorScheme = colorScheme,
         typography = AppTypography,
-        content = content
+        content = content,
     )
 }
