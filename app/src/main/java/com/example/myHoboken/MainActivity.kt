@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 @Preview(showSystemUi = true)
 fun MyHobokenAppPreview() {
-    MyHobokenTheme (darkTheme = false) {
+    MyHobokenTheme (darkTheme = false, dynamicColor = false) {
         MyHobokenApp()
     }
 }

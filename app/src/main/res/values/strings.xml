@@ -32,10 +32,7 @@
     <string name="madewell">Madewell</string>
     <string name="lululemon">Lululemon</string>
     <string name="thriftbox">Thriftbox</string>
-
-
-
-
+    <string name="select_category">Please select a category:</string>
 
 
 </resources>

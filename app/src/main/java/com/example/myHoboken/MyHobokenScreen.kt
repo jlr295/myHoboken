@@ -3,6 +3,7 @@ package com.example.myHoboken
 import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
@@ -39,10 +40,11 @@ fun MyHobokenAppBar(
     TopAppBar(
         title = { Text(
             text = stringResource(currentScreen.title),
-            style = MaterialTheme.typography.headlineLarge
+            style = MaterialTheme.typography.headlineLarge,
+             modifier = Modifier.fillMaxWidth()
         ) },
         colors = TopAppBarDefaults.mediumTopAppBarColors(
-            containerColor = MaterialTheme.colorScheme.primaryContainer
+            containerColor = MaterialTheme.colorScheme.primary
         )
     )
 
@@ -59,8 +61,8 @@ fun MyHobokenApp(
         topBar = {
             MyHobokenAppBar(
                 currentScreen = currentScreen
-            )
-        }
+            ) },
+        containerColor = MaterialTheme.colorScheme.surface
     ) { innerPadding ->
             Column(
                 modifier = Modifier
@@ -68,7 +70,9 @@ fun MyHobokenApp(
                     .fillMaxSize()
             ) {
                 StartCategoryScreen(
-                    categories = DataSource.categories
+                    categories = DataSource.categories,
+                    modifier = Modifier
+                        .fillMaxWidth()
                 )
         }
     }
