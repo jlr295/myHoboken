@@ -7,7 +7,7 @@ object DataSource {
         R.string.bars,
         R.string.parks,
         R.string.restaurants,
-        R.string.coffee_shops,
+        R.string.cafes,
         R.string.shopping
     )
 
