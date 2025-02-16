@@ -11,6 +11,7 @@ object DataSource {
         R.string.shopping
     )
 
+
     val bars = listOf(
         R.string.belo_bar,
         R.string.carpe_diem,
@@ -35,7 +36,7 @@ object DataSource {
         R.string.tosti
     )
 
-    val coffee = listOf(
+    val cafes = listOf(
         R.string.bwe,
         R.string.mojo,
         R.string.roost,
@@ -50,4 +51,13 @@ object DataSource {
         R.string.lululemon,
         R.string.thriftbox
     )
+
+    val businessMap = mapOf(
+        "Bars" to bars,
+        "Parks" to parks,
+        "Restaurants" to restaurants,
+        "Cafes" to cafes,
+        "Shopping" to shopping
+    )
+
 }

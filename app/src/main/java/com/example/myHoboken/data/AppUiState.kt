@@ -7,19 +7,21 @@ import androidx.navigation.NavBackStackEntry
  * Breadcrumbs of current session.
  */
 
-
 data class AppUiState(
 
     // Selected Category
-    val categoryID: Int = 0,
-
     val categoryName: String = "",
 
     // Selected Business
-    val businessID: Int = 0,
+    val businessName: String = "",
 
-    val categories: List<Int> = DataSource.categories.map{it},
+    // Categories
+    //TO DO map function not necessary?
+    val categories: List<Int> = listOf(),
 
-    val businessOptions: List<String> = listOf()
+    // Businesses
+    val businesses: List<Int> = listOf(),
+
+
 
 )

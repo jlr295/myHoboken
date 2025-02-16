@@ -46,6 +46,45 @@ enum class MyHobokenScreen(@StringRes val title: Int) {
     Shopping(title = R.string.shopping)
 }
 
+// ENUM with categories
+enum class MyHobokenBusinesses(@StringRes val title: Int) {
+    // BARS
+    BeloBar(title = R.string.belo_bar),
+    CarpeDiem(title = R.string.carpe_diem),
+    DearMaud(title = R.string.dear_maud),
+    Pier13(title = R.string.pier_13),
+    StingRay(title = R.string.string_ray),
+
+    // PARKS
+    ChurchSq(title = R.string.church_square_park),
+    MaxWell(title = R.string.maxwell_park),
+    PierA(title = R.string.pier_a),
+    Sinat(title = R.string.sinatra_park),
+    Stevens(title = R.string.stevens_park),
+
+    // SHOPPING
+    Athleta(title = R.string.athleta),
+    Sephora(title = R.string.sephora),
+    MadeWell(title = R.string.madewell),
+    LuluLemon(title =R.string.lululemon),
+    ThriftBox(title = R.string.thriftbox),
+
+    // COFFEE
+    Bwe(title = R.string.bwe),
+    Mojo(title = R.string.mojo),
+    Roost(title = R.string.roost),
+    Hive(title = R.string.hive),
+    Yukis(title = R.string.yukis),
+
+    // Restuarants
+    Augstinos(title = R.string.augustinos),
+    Karma(title = R.string.karma_kafe),
+    Morelias(title = R.string.morelias),
+    Panela(title = R.string.panela),
+    Tosti(title = R.string.tosti)
+}
+
+
 // App bar
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -114,7 +153,6 @@ fun MyHobokenApp(
                         },
                     modifier = Modifier
                         .fillMaxSize()
-                        .background(MaterialTheme.colorScheme.inverseOnSurface)
                         .padding(dimensionResource(R.dimen.padding_small)) // ADD padding
                 )
             }
@@ -124,36 +162,55 @@ fun MyHobokenApp(
            * */
             composable(route = MyHobokenScreen.Bars.name){
                 BusinessScreen(
-                    categories = DataSource.bars,
+                    appUiState = uiState,
+                    onBusinessSelection = {
+                        viewModel.setBusinessName(it)
+                        navController.navigate(it)
+                    },
                     modifier = Modifier
                         .fillMaxSize()
                 )
             }
             composable(route = MyHobokenScreen.Restaurants.name){
                 BusinessScreen(
-                    categories = DataSource.restaurants,
+                    appUiState = uiState,
+                    onBusinessSelection = {
+                        viewModel.setBusinessName(it)
+                        navController.navigate(it)
+                    },
                     modifier = Modifier
                         .fillMaxSize()
                 )
             }
             composable(route = MyHobokenScreen.Cafes.name){
                 BusinessScreen(
-                    categories = DataSource.coffee,
+                    appUiState = uiState,
+                    onBusinessSelection = {
+                        viewModel.setBusinessName(it)
+                        navController.navigate(it)
+                    },
                     modifier = Modifier
                         .fillMaxSize()
                 )
             }
             composable(route = MyHobokenScreen.Shopping.name){
-                val context = LocalContext.current
                 BusinessScreen(
-                    categories = DataSource.shopping,
+                    appUiState = uiState,
+                    onBusinessSelection = {
+                        viewModel.setBusinessName(it)
+                        navController.navigate(it)
+                    },
                     modifier = Modifier
                         .fillMaxSize()
                 )
             }
             composable(route = MyHobokenScreen.Parks.name){
                 BusinessScreen(
-                    categories = DataSource.parks,
+                    appUiState = uiState,
+                    onBusinessSelection = {
+                        viewModel.setBusinessName(it)
+                        navController.navigate(it)
+                    },
                     modifier = Modifier
                         .fillMaxSize()
                 )
