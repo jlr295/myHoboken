@@ -1,7 +1,6 @@
 package com.example.myHoboken
 
 import androidx.annotation.StringRes
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
@@ -28,6 +27,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.myHoboken.data.DataSource
+import com.example.myHoboken.ui.BusinessDetailsScreen
 import com.example.myHoboken.ui.BusinessScreen
 import com.example.myHoboken.ui.SelectionViewModel
 import com.example.myHoboken.ui.StartCategoryScreen
@@ -39,49 +39,8 @@ import com.example.myHoboken.ui.StartCategoryScreen
 // ENUM with categories
 enum class MyHobokenScreen(@StringRes val title: Int) {
     Start(title = R.string.app_name),
-    Bars(title = R.string.bars),
-    Restaurants(title = R.string.restaurants),
-    Cafes(title = R.string.cafes),
-    Parks(title = R.string.parks),
-    Shopping(title = R.string.shopping)
-}
-
-// ENUM with categories
-enum class MyHobokenBusinesses(@StringRes val title: Int) {
-    // BARS
-    BeloBar(title = R.string.belo_bar),
-    CarpeDiem(title = R.string.carpe_diem),
-    DearMaud(title = R.string.dear_maud),
-    Pier13(title = R.string.pier_13),
-    StingRay(title = R.string.string_ray),
-
-    // PARKS
-    ChurchSq(title = R.string.church_square_park),
-    MaxWell(title = R.string.maxwell_park),
-    PierA(title = R.string.pier_a),
-    Sinat(title = R.string.sinatra_park),
-    Stevens(title = R.string.stevens_park),
-
-    // SHOPPING
-    Athleta(title = R.string.athleta),
-    Sephora(title = R.string.sephora),
-    MadeWell(title = R.string.madewell),
-    LuluLemon(title =R.string.lululemon),
-    ThriftBox(title = R.string.thriftbox),
-
-    // COFFEE
-    Bwe(title = R.string.bwe),
-    Mojo(title = R.string.mojo),
-    Roost(title = R.string.roost),
-    Hive(title = R.string.hive),
-    Yukis(title = R.string.yukis),
-
-    // Restuarants
-    Augstinos(title = R.string.augustinos),
-    Karma(title = R.string.karma_kafe),
-    Morelias(title = R.string.morelias),
-    Panela(title = R.string.panela),
-    Tosti(title = R.string.tosti)
+    Businesses(title = R.string.businesses),
+    BusinessDetails(title = R.string.business_details)
 }
 
 
@@ -119,10 +78,12 @@ fun MyHobokenAppBar(
 fun MyHobokenApp(
     navController: NavHostController = rememberNavController(),
     viewModel: SelectionViewModel = viewModel(),
+
 ) {
     val backStackEntry by navController.currentBackStackEntryAsState()
-    val currentScreen = MyHobokenScreen.valueOf(
-        backStackEntry?.destination?.route ?: MyHobokenScreen.Start.name
+
+   val currentScreen = MyHobokenScreen.valueOf(
+       backStackEntry?.destination?.route ?: MyHobokenScreen.Start.name
     )
 
     Scaffold(
@@ -149,73 +110,43 @@ fun MyHobokenApp(
                     appUiState = uiState,
                     onCategoryButtonClick = {
                         viewModel.setCategoryName(it)
-                        navController.navigate(it)
+                        viewModel.setScreenName(it)
+                        navController.navigate(MyHobokenScreen.Businesses.name)
                         },
                     modifier = Modifier
                         .fillMaxSize()
-                        .padding(dimensionResource(R.dimen.padding_small)) // ADD padding
+                        .padding(dimensionResource(R.dimen.padding_small))
                 )
             }
 
            /*
            * Routes to different business categories
            * */
-            composable(route = MyHobokenScreen.Bars.name){
+            composable(route = MyHobokenScreen.Businesses.name)
+            {
+                val resources = LocalContext.current.resources
                 BusinessScreen(
                     appUiState = uiState,
                     onBusinessSelection = {
-                        viewModel.setBusinessName(it)
-                        navController.navigate(it)
+                        viewModel.setBusinessName(resources.getString(it))
+                        viewModel.setScreenName(resources.getString(it))
+                        viewModel.setPhoto(it)
+                        navController.navigate(MyHobokenScreen.BusinessDetails.name)
                     },
                     modifier = Modifier
-                        .fillMaxSize()
-                )
-            }
-            composable(route = MyHobokenScreen.Restaurants.name){
-                BusinessScreen(
-                    appUiState = uiState,
-                    onBusinessSelection = {
-                        viewModel.setBusinessName(it)
-                        navController.navigate(it)
-                    },
-                    modifier = Modifier
-                        .fillMaxSize()
-                )
-            }
-            composable(route = MyHobokenScreen.Cafes.name){
-                BusinessScreen(
-                    appUiState = uiState,
-                    onBusinessSelection = {
-                        viewModel.setBusinessName(it)
-                        navController.navigate(it)
-                    },
-                    modifier = Modifier
-                        .fillMaxSize()
-                )
-            }
-            composable(route = MyHobokenScreen.Shopping.name){
-                BusinessScreen(
-                    appUiState = uiState,
-                    onBusinessSelection = {
-                        viewModel.setBusinessName(it)
-                        navController.navigate(it)
-                    },
-                    modifier = Modifier
-                        .fillMaxSize()
-                )
-            }
-            composable(route = MyHobokenScreen.Parks.name){
-                BusinessScreen(
-                    appUiState = uiState,
-                    onBusinessSelection = {
-                        viewModel.setBusinessName(it)
-                        navController.navigate(it)
-                    },
-                    modifier = Modifier
-                        .fillMaxSize()
-                )
+                        .fillMaxSize())
             }
 
+            /*
+           * Routes to different business details
+           * */
+            composable(route = MyHobokenScreen.BusinessDetails.name)
+            {
+                BusinessDetailsScreen(
+                    appUiState = uiState,
+                    modifier = Modifier
+                        .fillMaxSize())
+            }
         }
     }
 }
