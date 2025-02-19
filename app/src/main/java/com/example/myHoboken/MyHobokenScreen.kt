@@ -99,7 +99,9 @@ fun MyHobokenApp(
             MyHobokenAppBar(
                 currentScreen = currentScreen,
                 canNavigateBack = navController.previousBackStackEntry != null,
-                navigateUp = { navController.navigateUp() }
+                navigateUp = { navController.navigateUp() },
+                modifier = Modifier
+                    .padding(dimensionResource(R.dimen.padding_medium))
             )
         },
         containerColor = MaterialTheme.colorScheme.surface
