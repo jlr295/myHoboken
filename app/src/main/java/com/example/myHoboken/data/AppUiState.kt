@@ -1,5 +1,8 @@
 package com.example.myHoboken.data
 
+import com.example.myHoboken.model.Business
+import com.example.myHoboken.model.Category
+
 /**
  * Breadcrumbs of current session.
  */
@@ -10,24 +13,10 @@ data class AppUiState(
     val currentScreen: String = "",
 
     // Selected Category
-    val categoryName: String = "",
+    val category: Category = Category(0, 0, listOf()),
 
     // Selected Business
-    val businessName: String = "",
-
-    // Business Photo
-    val businessPhoto: Int = 0,
-
-    // Business Description
-    val businessDescription: String = "We are testing this guy to see what we can say",
-
-    // Categories
-    //TO DO map function not necessary?
-    val categories: List<Int> = listOf(),
-
-    // Businesses
-    val businesses: List<Int> = listOf(),
+    val business: Business = Business(0, 0, 0, 0),
 
 
-
-)
+    )

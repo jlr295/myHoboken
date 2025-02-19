@@ -15,6 +15,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -32,7 +33,7 @@ fun BusinessDetailsScreen(
         modifier = modifier,
     ) {
         Image(
-            painterResource(appUiState.businessPhoto),
+            painterResource(appUiState.business.photo),
             alignment = Alignment.TopStart,
             contentScale = ContentScale.FillBounds,
             contentDescription = null,
@@ -43,7 +44,7 @@ fun BusinessDetailsScreen(
         )
 
         Text(
-            text = appUiState.businessName,
+            text = stringResource(appUiState.business.name),
             fontSize = 40.sp,
             fontWeight = FontWeight.Bold,
             modifier = Modifier.padding(
@@ -52,10 +53,16 @@ fun BusinessDetailsScreen(
         )
 
         Text(
-            text = appUiState.businessDescription,
+            text = stringResource(appUiState.business.address),
             fontSize = 15.sp,
             fontWeight = FontWeight.Bold
         )
 
-        }
+        Text(
+            text = stringResource(appUiState.business.description),
+            fontSize = 15.sp,
+            fontWeight = FontWeight.Bold
+        )
+    }
+
 }
