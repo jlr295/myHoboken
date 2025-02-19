@@ -1,9 +1,6 @@
 package com.example.myHoboken.ui
 
 
-import android.provider.ContactsContract.Data
-import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.ViewModel
 import com.example.myHoboken.R
 import com.example.myHoboken.data.AppUiState
