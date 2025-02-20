@@ -108,12 +108,12 @@ fun ButtonCardBusinesses(obj: Business, onClick: (Business) -> Unit ) {
 
 
     ElevatedCard (
+        onClick = { onClick(obj) },
         shape = RoundedCornerShape(15),
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.surfaceColorAtElevation(10.dp),
-            contentColor = MaterialTheme.colorScheme.surfaceColorAtElevation(10.dp)
+            contentColor = MaterialTheme.colorScheme.onSurfaceVariant
         ),
-        onClick = { onClick(obj) },
         modifier = Modifier
             .fillMaxWidth()
             .height(140.dp)

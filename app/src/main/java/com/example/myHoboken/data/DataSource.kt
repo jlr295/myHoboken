@@ -9,27 +9,27 @@ object DataSource {
     private val bars = listOf(
         Business(
             R.string.belo_bar, R.drawable.belobar,
-            address = 0,
+            address = R.string.belo_add,
             description = 0
         ),
         Business(
             R.string.carpe_diem, R.drawable.carpediem,
-            address = 0,
+            address = R.string.carpe_add,
             description = 0
         ),
         Business(
             R.string.dear_maud, R.drawable.dearmaud,
-            address = 0,
+            address = R.string.maud_add,
             description = 0
         ),
         Business(
             R.string.pier_13, R.drawable.pier13,
-            address = 0,
+            address = R.string.pier13_add,
             description = 0
         ),
         Business(
             R.string.string_ray, R.drawable.stingray,
-            address = 0,
+            address = R.string.stingray_add,
             description = 0
         )
     )
@@ -37,27 +37,27 @@ object DataSource {
     private val parks = listOf(
         Business(
             R.string.church_square_park, R.drawable.churchsquare,
-            address = 0,
+            address = R.string.churchsq_add,
             description = 0
         ),
         Business(
             R.string.maxwell_park, R.drawable.maxwellpark,
-            address = 0,
+            address = R.string.maxwell_add,
             description = 0
         ),
         Business(
             R.string.pier_a, R.drawable.piera,
-            address = 0,
+            address = R.string.piera_add,
             description = 0
         ),
         Business(
             R.string.sinatra_park, R.drawable.sinatra,
-            address = 0,
+            address = R.string.sinatra_add,
             description = 0
         ),
         Business(
             R.string.stevens_park, R.drawable.stevenspark,
-            address = 0,
+            address = R.string.stevens_add,
             description = 0
         )
     )
@@ -65,27 +65,27 @@ object DataSource {
     private val restaurants = listOf(
         Business(
             R.string.augustinos, R.drawable.augustinos,
-            address = 0,
+            address = R.string.augustinos_add,
             description = 0
         ),
         Business(
             R.string.karma_kafe, R.drawable.karmakafe,
-            address = 0,
+            address = R.string.bwe_add,
             description = 0
         ),
         Business(
             R.string.morelias, R.drawable.morelias,
-            address = 0,
+            address = R.string.morelias_add,
             description = 0
         ),
         Business(
             R.string.panela, R.drawable.panela,
-            address = 0,
+            address = R.string.panela,
             description = 0
         ),
         Business(
             R.string.tosti, R.drawable.tosti,
-            address = 0,
+            address = R.string.tosti_add,
             description = 0
         )
     )
@@ -93,27 +93,27 @@ object DataSource {
     private val cafes = listOf(
         Business(
             R.string.bwe, R.drawable.bwe,
-            address = 0,
+            address = R.string.bwe_add,
             description = 0
         ),
         Business(
             R.string.mojo, R.drawable.mojo,
-            address = 0,
+            address = R.string.mojo_add,
             description = 0
         ),
         Business(
             R.string.roost, R.drawable.roost,
-            address = 0,
+            address = R.string.roost_add,
             description = 0
         ),
         Business(
             R.string.hive, R.drawable.hive,
-            address = 0,
+            address = R.string.hive_add,
             description = 0
         ),
         Business(
             R.string.yukis, R.drawable.yukis,
-            address = 0,
+            address = R.string.yukis_add,
             description = 0
         )
     )
@@ -121,27 +121,27 @@ object DataSource {
     private val shopping = listOf(
         Business(
             R.string.athleta, R.drawable.athleta,
-            address = 0,
+            address = R.string.athleta_add,
             description = 0
         ),
         Business(
             R.string.sephora, R.drawable.sephora,
-            address = 0,
+            address = R.string.sephora_add,
             description = 0
         ),
         Business(
             R.string.madewell, R.drawable.madewell,
-            address = 0,
+            address = R.string.madewell_add,
             description = 0
         ),
         Business(
             R.string.lululemon, R.drawable.lululemon,
-            address = 0,
+            address = R.string.lulu_add,
             description = 0
         ),
         Business(
             R.string.thriftbox, R.drawable.thriftbox,
-            address = 0,
+            address = R.string.thriftb_add,
             description = 0
         )
     )

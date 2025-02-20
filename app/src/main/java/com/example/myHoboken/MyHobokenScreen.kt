@@ -142,7 +142,9 @@ fun MyHobokenApp(
                         navController.navigate(MyHobokenScreen.BusinessDetails.name)
                     },
                     modifier = Modifier
-                        .fillMaxSize())
+                        .fillMaxSize()
+                        .padding(dimensionResource(R.dimen.padding_small))
+                )
             }
 
             /*
@@ -153,7 +155,9 @@ fun MyHobokenApp(
                 BusinessDetailsScreen(
                     appUiState = uiState,
                     modifier = Modifier
-                        .fillMaxSize())
+                        .fillMaxSize()
+                        .padding(dimensionResource(R.dimen.padding_small))
+                )
             }
         }
     }

@@ -28,12 +28,20 @@ fun BusinessDetailsScreen(
     modifier: Modifier = Modifier
 ){
     Column(
-        verticalArrangement = Arrangement.Center,
+        verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = modifier,
     ) {
+        Text(
+            text = stringResource(appUiState.business.name),
+            fontSize = 40.sp,
+            fontWeight = FontWeight.Bold,
+        )
+        Text(
+            text = stringResource(appUiState.business.address)
+        )
         Image(
-            painterResource(appUiState.business.photo),
+            painter = painterResource(appUiState.business.photo),
             alignment = Alignment.TopStart,
             contentScale = ContentScale.FillBounds,
             contentDescription = null,
@@ -43,26 +51,8 @@ fun BusinessDetailsScreen(
                 .clip(RoundedCornerShape(10))
         )
 
-        Text(
-            text = stringResource(appUiState.business.name),
-            fontSize = 40.sp,
-            fontWeight = FontWeight.Bold,
-            modifier = Modifier.padding(
-                dimensionResource(R.dimen.padding_medium)
-                )
-        )
 
-        Text(
-            text = stringResource(appUiState.business.address),
-            fontSize = 15.sp,
-            fontWeight = FontWeight.Bold
-        )
 
-        Text(
-            text = stringResource(appUiState.business.description),
-            fontSize = 15.sp,
-            fontWeight = FontWeight.Bold
-        )
     }
 
 }

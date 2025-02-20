@@ -9,79 +9,79 @@
     <string name="bars">Bars</string>
 
     <string name="belo_bar">Belo Bar</string>
-    <string name="belo_add"></string>
+    <string name="belo_add">104 Hudson St, Hoboken, NJ 07030</string>
 
     <string name="carpe_diem">Carpe Diem</string>
-    <string name="carpe_add"></string>
+    <string name="carpe_add">1405 Grand St, Hoboken, NJ 07030</string>
 
     <string name="dear_maud">Dear Maud</string>
-    <string name="maud_add"></string>
+    <string name="maud_add">205 1st St, Hoboken, NJ 07030</string>
 
     <string name="pier_13">Pier 13</string>
-    <string name="pier13_add"></string>
+    <string name="pier13_add">1301 Sinatra Dr N, Hoboken, NJ 07030</string>
 
     <string name="string_ray">String Ray</string>
-    <string name="stingray_add"></string>
+    <string name="stingray_add">1210 Washington St, Hoboken, NJ 07030</string>
 
     <string name="church_square_park">Church Square</string>
-    <string name="churchsq_add"></string>
+    <string name="churchsq_add">400 Garden St, Hoboken, NJ 07030</string>
 
     <string name="maxwell_park">Maxwell Park</string>
-    <string name="maxwell_add"></string>
+    <string name="maxwell_add">11TH Sinatra Dr N, Hoboken, NJ 07030</string>
 
     <string name="pier_a">Pier A</string>
-    <string name="piera_add"></string>
+    <string name="piera_add"> 100 Sinatra Dr., Hoboken, NJ 07030</string>
 
     <string name="sinatra_park">Sinatra Park</string>
-    <string name="sinatra_add"></string>
+    <string name="sinatra_add">Sinatra Dr, Hoboken, NJ 07030</string>
 
     <string name="stevens_park">Stevens Park</string>
-    <string name="stevens_add"></string>
+    <string name="stevens_add">Hudson St, Hoboken, NJ 07030</string>
 
     <string name="augustinos">Augustinos</string>
-    <string name="augustinos_add"></string>
+    <string name="augustinos_add">1104 Washington St, Hoboken, NJ 07030</string>
 
     <string name="karma_kafe">Karma Kafe</string>
-    <string name="karma_add"></string>
+    <string name="karma_add">505 Washington St, Hoboken, NJ 07030</string>
 
     <string name="morelias">Morelias</string>
-    <string name="morelias_add"></string>
+    <string name="morelias_add">932 Washington St, Hoboken, NJ 07030</string>
 
     <string name="panela">Panela</string>
-    <string name="panela_add"></string>
+    <string name="panela_add">36-42 Newark St., Hoboken, NJ 07030></string>
 
     <string name="tosti">Tosti</string>
-    <string name="tosti_add"></string>
+    <string name="tosti_add">1024 Washington St, Hoboken, NJ 07030</string>
 
     <string name="bwe">Bwe Kafe</string>
-    <string name="bwe_add"></string>
+    <string name="bwe_add">1002 Washington St, Hoboken, NJ 07030</string>
 
     <string name="mojo">Mojo</string>
-    <string name="mojo_add"></string>
+    <string name="mojo_add"> 230 Willow Ave, Hoboken, NJ 07030</string>
 
     <string name="roost">Roost Outpost</string>
-    <string name="roost_add"></string>
+    <string name="roost_add">55 1st St, Hoboken, NJ 07030</string>
 
     <string name="hive">The Hive</string>
-    <string name="hive_add"></string>
+    <string name="hive_add">1000 Park Ave, Hoboken, NJ 07030</string>
 
     <string name="yukis">Yukis</string>
-    <string name="yukis_add"></string>
+    <string name="yukis_add">720 Monroe St Store - E101, Hoboken, NJ 07030</string>
 
     <string name="athleta">Athleta</string>
-    <string name="athleta_add"></string>
+    <string name="athleta_add">316 Washington St, Hoboken, NJ 07030</string>
 
     <string name="sephora">Sephora</string>
-    <string name="sephora_add"></string>
+    <string name="sephora_add">319 Washington St, Hoboken, NJ 07030</string>
 
     <string name="madewell">Madewell</string>
-    <string name="madewell_add"></string>
+    <string name="madewell_add"> 202 Washington St, Hoboken, NJ 07030</string>
 
     <string name="lululemon">Lululemon</string>
-    <string name="lulu_add"></string>
+    <string name="lulu_add">313 Washington St, Hoboken, NJ 07030</string>
 
     <string name="thriftbox">Thriftbox</string>
-    <string name="thriftb_add"></string>
+    <string name="thriftb_add">522 Jefferson St, Hoboken, NJ 07030</string>
 
     <string name="select_category">Please select a category:</string>
     <string name="back_button">Back Button</string>
