@@ -10,78 +10,105 @@
 
     <string name="belo_bar">Belo Bar</string>
     <string name="belo_add">104 Hudson St, Hoboken, NJ 07030</string>
+    <string name="beloDesc">Belo Bar has amazing cocktails and food.</string>
 
     <string name="carpe_diem">Carpe Diem</string>
     <string name="carpe_add">1405 Grand St, Hoboken, NJ 07030</string>
+    <string name="carpeDesc">Carpe Diem is a local bar with great bar food (especially there wings!).</string>
 
     <string name="dear_maud">Dear Maud</string>
     <string name="maud_add">205 1st St, Hoboken, NJ 07030</string>
+    <string name="maudDesc">Dear Maud is a popular hoboken spot with really good cocktails and great ambience.</string>
 
     <string name="pier_13">Pier 13</string>
     <string name="pier13_add">1301 Sinatra Dr N, Hoboken, NJ 07030</string>
+    <string name="pier13Desc">Pier 13 is great place to grab a few drinks with friends,</string>
 
     <string name="string_ray">String Ray</string>
     <string name="stingray_add">1210 Washington St, Hoboken, NJ 07030</string>
+    <string name="stingRayDesc">Sting Ray is another local hotspot with some of the best coktails in Hoboken.</string>
 
     <string name="church_square_park">Church Square</string>
     <string name="churchsq_add">400 Garden St, Hoboken, NJ 07030</string>
+    <string name="churchsqDesc">Church Square Park, is a great small park right across from te Hoboken Library!</string>
+
 
     <string name="maxwell_park">Maxwell Park</string>
     <string name="maxwell_add">11TH Sinatra Dr N, Hoboken, NJ 07030</string>
+    <string name="maxDesc">Maxwell Park is an amazing place to run or go for walks,  You get a beautiful view of the city skyline.</string>
 
     <string name="pier_a">Pier A</string>
     <string name="piera_add"> 100 Sinatra Dr., Hoboken, NJ 07030</string>
+    <string name="pierDesc">Pier A is a beautiful spot to picknick with some friends!</string>
 
     <string name="sinatra_park">Sinatra Park</string>
     <string name="sinatra_add">Sinatra Dr, Hoboken, NJ 07030</string>
+    <string name="sinatraDesc">Another location with a beautiful view of New York City (it is much better from the outside!).</string>
 
     <string name="stevens_park">Stevens Park</string>
     <string name="stevens_add">Hudson St, Hoboken, NJ 07030</string>
+    <string name="stevensDesc">Stevens Park is another small beautiful park in Hoboken.  Right outside Stevens College.</string>
 
     <string name="augustinos">Augustinos</string>
     <string name="augustinos_add">1104 Washington St, Hoboken, NJ 07030</string>
+    <string name="augustinosDesc">Augustino\'s has some of the best Italian in hoboken (according to reddit).</string>
 
     <string name="karma_kafe">Karma Kafe</string>
     <string name="karma_add">505 Washington St, Hoboken, NJ 07030</string>
+    <string name="karmaDesc">Great local Indian stop with generous portions.</string>
 
     <string name="morelias">Morelias</string>
     <string name="morelias_add">932 Washington St, Hoboken, NJ 07030</string>
+    <string name="moreliasoDesc">Amazing mexican ice cream pops! This is one of the more unique dessert places in Hoboken.</string>
 
     <string name="panela">Panela</string>
     <string name="panela_add">36-42 Newark St., Hoboken, NJ 07030></string>
+    <string name="panelaDesc">Panela has amazing empanadas!</string>
 
     <string name="tosti">Tosti</string>
     <string name="tosti_add">1024 Washington St, Hoboken, NJ 07030</string>
+    <string name="tostiDesc">Tosti has a very large selection and everything I have ordered has been amazing!</string>
 
     <string name="bwe">Bwe Kafe</string>
     <string name="bwe_add">1002 Washington St, Hoboken, NJ 07030</string>
+    <string name="bweDesc">Great coffee spot with multiple Hoboken locations!</string>
 
     <string name="mojo">Mojo</string>
     <string name="mojo_add"> 230 Willow Ave, Hoboken, NJ 07030</string>
+    <string name="mojoDesc">Great place for lattes, I like the one with sprinkles!!</string>
 
     <string name="roost">Roost Outpost</string>
     <string name="roost_add">55 1st St, Hoboken, NJ 07030</string>
+    <string name="roostDesc">Great coffee place for those with a good palette for drinks! </string>
 
     <string name="hive">The Hive</string>
     <string name="hive_add">1000 Park Ave, Hoboken, NJ 07030</string>
+    <string name="hiveDesc">The Hive has amazing cinnamon buns and drinks.  I love the cereal milk latte.</string>
 
     <string name="yukis">Yukis</string>
     <string name="yukis_add">720 Monroe St Store - E101, Hoboken, NJ 07030</string>
+    <string name="yukiDesc">Great Israeli bakery with amazing coffee and bakery items! </string>
 
     <string name="athleta">Athleta</string>
     <string name="athleta_add">316 Washington St, Hoboken, NJ 07030</string>
+    <string name="athletaDesc">Good selection of athletic wear.</string>
 
     <string name="sephora">Sephora</string>
     <string name="sephora_add">319 Washington St, Hoboken, NJ 07030</string>
+    <string name="sephoraDesc">Great location, the staff are always super helpful.</string>
 
     <string name="madewell">Madewell</string>
     <string name="madewell_add"> 202 Washington St, Hoboken, NJ 07030</string>
+    <string name="madewellDesc">Good quality clothes and the store is very well kept. </string>
 
     <string name="lululemon">Lululemon</string>
     <string name="lulu_add">313 Washington St, Hoboken, NJ 07030</string>
+    <string name="luluDesc">Good quality fitness wear and a great location (right next to Sephora!).</string>
 
     <string name="thriftbox">Thriftbox</string>
     <string name="thriftb_add">522 Jefferson St, Hoboken, NJ 07030</string>
+    <string name="thriftDesc">This is my favorite shopping location in Hoboken. Amazing prices and good quality second-had items.
+    The owner is also very nice!</string>
 
     <string name="select_category">Please select a category:</string>
     <string name="back_button">Back Button</string>

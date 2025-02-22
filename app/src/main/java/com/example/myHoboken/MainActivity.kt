@@ -1,5 +1,13 @@
 package com.example.myHoboken
 
+/*
+
+* Name: Jaclyn Rutter
+* Email: RutterJ@OregonState.edu
+* CS492: Assignment 4: Building a Multi-Screen App
+*
+* */
+
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent

@@ -17,6 +17,7 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.myHoboken.R
@@ -42,13 +43,19 @@ fun BusinessDetailsScreen(
         )
         Image(
             painter = painterResource(appUiState.business.photo),
-            alignment = Alignment.TopStart,
             contentScale = ContentScale.FillBounds,
             contentDescription = null,
             modifier = Modifier
                 .width(350.dp)
                 .height(400.dp)
                 .clip(RoundedCornerShape(10))
+        )
+        Text(
+            text = stringResource(appUiState.business.description),
+            textAlign = TextAlign.Justify,
+            fontSize = 20.sp,
+            modifier = Modifier
+                .padding(dimensionResource(R.dimen.padding_medium))
         )
 
 
